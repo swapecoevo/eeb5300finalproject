@@ -88,3 +88,5 @@ java -jar $Trimmomatic PE -threads 4 ../files/ecar/EJCF002_C05_S33_L003_R1_001.f
 java -jar $Trimmomatic PE -threads 4 ../files/ecar/EJCF002_I05_S126_L003_R1_001.fastq.gz  ../files/ecar/EJCF002_I05_S126_L003_R2_001.fastq.gz EJCF002_I05_S126_L003_R1_001_pair.fastq.gz EJCF002_I05_S126_L003_R1_001_unpair.fastq.gz EJCF002_I05_S126_L003_R2_001_pair.fastq.gz EJCF002_I05_S126_L003_R2_001_unpair.fastq.gz \
         ILLUMINACLIP:TruSeq3-PE-2.fa:2:30:10 \
         SLIDINGWINDOW:4:25 MINLEN:45
+
+
