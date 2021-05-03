@@ -27,3 +27,5 @@ We used Trinity to assemble our transcriptome. When running, we split our files 
 <b><h1>#Step 8: Index Reference using <i>Kalisto</i>, Generate Counts for each Library </b></h1>
 
 <b><h1>#Step 9: <i>NOIseq</i> Analysis and Differential Experession in R</b></h1>
+
+![image](https://user-images.githubusercontent.com/44265751/116934557-1e80d000-ac33-11eb-9855-64ce23920ca4.png)
