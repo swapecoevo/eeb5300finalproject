@@ -20,5 +20,10 @@ We used Trinity to assemble our transcriptome. When running, we split our files 
 
 <b><h1>#Step 5: Identify Coding Regions using <i>Transdecoder</i> and <i>hmer</i></b></h1>
 
-<b><h1>#Step 6: Concatenate Asseblies for Refernce Transcriptome </b></h1>
+<b><h1>#Step 6: Assembly of <i>de novo</i> Reference Transcriptome using RNAQuast</b></h1>
 
+<b><h1>#Step 7: Annotate Reference Transcriptome using <i>EnTAP</i></b></h1>
+
+<b><h1>#Step 8: Index Reference using <i>Kalisto</i>, Generate Counts for each Library </b></h1>
+
+<b><h1>#Step 9: <i>NOIseq</i> Analysis and Differential Experession in R</b></h1>
