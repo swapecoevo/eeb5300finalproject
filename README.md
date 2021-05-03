@@ -14,9 +14,11 @@ From this point onward, we decided to only use the files associated with Wing2, 
 ![image](https://user-images.githubusercontent.com/44265751/116928419-0b6a0200-ac2b-11eb-8d1a-e961253c2946.png)
 
 <b><h1>#Step 3:<i> de novo</i> Assembly with Trinity </b></h1>
-We used Trinity to assemble our transcriptome. When running, we split our files in half and ran separately. This was 
+We used Trinity to assemble our transcriptome. When running, we split our files in half and ran separately. 
 
-<b><h1>#Step 4:  </b></h1>
+<b><h1>#Step 4: Concatenate Asseblies for Refernce Transcriptome </b></h1>
 
+<b><h1>#Step 5: Identify Coding Regions using <i>Transdecoder</i> and <i>hmer</i></b></h1>
 
+<b><h1>#Step 6: Concatenate Asseblies for Refernce Transcriptome </b></h1>
 
