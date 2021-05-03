@@ -1,6 +1,7 @@
 #eeb5300finalproject
 
 <h1>Overview and Motivation:</h1>
+Treehoppers are insects that have evolved intricate, three-dimensional helmets. Fisher and colleagues (2020) found that these helmets are produced from co-opted wing genes, but the specifics of the chronological development are unknown. For our project, we decided to use treehopper RNAseq data from each body part at two different instars to investigate 
 
 
 <h2><b>#Step 1: File Organization, FastQC and MultiQC </b></h2>
