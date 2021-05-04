@@ -1,9 +1,10 @@
 #eeb5300finalproject
 
 <h1>Overview and Motivation:</h1>
-Treehoppers are insects that have evolved intricate, three-dimensional helmets. Fisher and colleagues (2020) found that these helmets are produced from co-opted wing genes, but the specifics of the chronological development are unknown. For our project, we decided to use treehopper RNAseq data from each body part at two different instars to investigate 
+Treehoppers are insects that have evolved intricate, three-dimensional helmets. During development, a portion of the body wall known as the pronotum begins an oragami-like folding process to create a helmet Fisher and colleagues (2020) found that these helmets are produced from co-opted wing genes, but the specifics of the chronological development are unknown. For our project, we decided to use treehopper RNAseq data from each body part at two different instars to investigate when wing genes are recruited for pronotum development.
 
 <h1>Related Work</h1>
+The background information comes from work by Fisher <i>et al.</i> 2020. In this <a href="https://pubmed.ncbi.nlm.nih.gov/31819237/">Paper</a>, the authors reveal that leafhoppers retain the ancestral condition of developing the pronotum from the mesonotum tissue, while treehoppers have co-opted wing patterning genes to develop helmets from the pronotum. 
 
 <h1>Initial Questions </h1>
 
