@@ -7,9 +7,10 @@ Treehoppers are insects that have evolved intricate, three-dimensional helmets. 
 The background information comes from work by Fisher <i>et al.</i> 2020. In this <a href="https://pubmed.ncbi.nlm.nih.gov/31819237/">Paper</a>, the authors reveal that leafhoppers retain the ancestral condition of developing the pronotum from the mesonotum tissue, while treehoppers have co-opted wing patterning genes to develop helmets from the pronotum. 
 
 <h1>Initial Questions </h1>
+After reading the work by Fisher <i>et al.</i> 2020, we wondered which stage of development begins to see the recruitment of wing patterning genes and in what order. To address this, we formulated two questions: 1) How are the wing patterning genes and the pronotum related? 2) How do the relationships between the pronotum and wing genes change between the 4th and 5th instar?
 
 <h1>Data Information</h1>
-
+The data used in this project was collected by Cera Fisher and shared with us by Elizabeth Jockusch. The data contains information on treehopper and leafhopper individuals in the fourth and fifth instar, including their body region. The data were paired-end and therefore have an assocaited R1 and R2 for each sample. To begin, we filtered out the leafhopper data and only used treehopper samples. 
 
 <h1>Workflow and Analysis</h1>
 <h2><b>#Step 1: File Organization, FastQC and MultiQC </b></h2>
