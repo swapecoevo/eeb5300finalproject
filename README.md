@@ -13,7 +13,7 @@ After reading the work by Fisher <i>et al.</i> 2020, we wondered which stage of 
 The data used in this project was collected by Cera Fisher and shared with us by Elizabeth Jockusch. The data contains information on treehopper and leafhopper individuals in the fourth and fifth instar, including their body region. The data were paired-end and therefore have an assocaited R1 and R2 for each sample. To begin, we filtered out the leafhopper data and only used treehopper samples. The data is located on the server in: 
 
 <h1>Workflow and Analysis</h1>
-We used the <a href="https://github.com/CBC-UCONN/RNAseq_nonmodel">Nonmodel RNAseq Tutorial</a> to analyze our data. The scripts used for each step are located in the Master control. The steps are broken down below:
+We used the <a href="https://github.com/CBC-UCONN/RNAseq_nonmodel">Nonmodel RNAseq Tutorial</a> to analyze our data. The scripts used for each step are located in the Master Branch. The steps are broken down below:
 <h2><b>#Step 1: File Organization, FastQC and MultiQC </b></h2>
 Files belong to Elizabeth Jockusch and Cera Fisher. To begin, we decided to focus on Pronotum, Wing2, Wing3 and Abdomen files for both the fourth and fifth instar. The Wing2 and Wing3 are understood to be involved in Pronotum development, meanwhile the Abdomen would serve as our outgroup for reference. Next, we ran FastQC and MultiQC on all of the files, which produced a large output. Overall, the quality was good and we had low adapter content. Two files, N10 and N11, were poor in quality but ultimately kept in our analysis.
 
