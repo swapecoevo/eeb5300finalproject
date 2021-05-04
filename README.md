@@ -3,7 +3,14 @@
 <h1>Overview and Motivation:</h1>
 Treehoppers are insects that have evolved intricate, three-dimensional helmets. Fisher and colleagues (2020) found that these helmets are produced from co-opted wing genes, but the specifics of the chronological development are unknown. For our project, we decided to use treehopper RNAseq data from each body part at two different instars to investigate 
 
+<h1>Related Work</h1>
 
+<h1>Initial Questions </h1>
+
+<h1>Data Information</h1>
+
+
+<h1>Workflow and Analysis</h1>
 <h2><b>#Step 1: File Organization, FastQC and MultiQC </b></h2>
 Files belong to Elizabeth Jockusch and Cera Fisher. To begin, we decided to focus on Pronotum, Wing2, Wing3 and Abdomen files for both the fourth and fifth instar. The Wing2 and Wing3 are understood to be involved in Pronotum development, meanwhile the Abdomen would serve as our outgroup for reference. Next, we ran FastQC and MultiQC on all of the files, which produced a large output. Overall, the quality was good and we had low adapter content. Two files, N10 and N11, were poor in quality but ultimately kept in our analysis.
 
@@ -33,3 +40,5 @@ We used Trinity to assemble our transcriptome. When running, we split our files 
 <b><h2>#Step 9: <i>NOIseq</i> Analysis and Differential Experession in R</b></h2>
 
 ![image](https://user-images.githubusercontent.com/44265751/116934557-1e80d000-ac33-11eb-9855-64ce23920ca4.png)
+
+<h1>Discussion</h1>
