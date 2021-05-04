@@ -1,16 +1,16 @@
 #eeb5300finalproject
 
 <h1>Overview and Motivation:</h1>
-Treehoppers are insects that have evolved intricate, three-dimensional helmets. During development, a portion of the body wall known as the pronotum begins an oragami-like folding process to create a helmet Fisher and colleagues (2020) found that these helmets are produced from co-opted wing genes, but the specifics of the chronological development are unknown. For our project, we decided to use treehopper RNAseq data from each body part at two different instars to investigate when wing genes are recruited for pronotum development.
+Treehoppers are insects that have evolved intricate, three-dimensional helmets. During development, a portion of the body wall known as the pronotum begins an oragami-like folding process to create a helmet Fisher and colleagues (2020) found that these helmets are produced from co-opted wing genes, but the specifics of the chronological development are unknown. For our project, we decided to use treehopper RNAseq data from each body part at two different instars to investigate when wing genes are recruited for pronotum development. 
 
 <h1>Related Work</h1>
-The background information comes from work by Fisher <i>et al.</i> 2020. In this <a href="https://pubmed.ncbi.nlm.nih.gov/31819237/">Paper</a>, the authors reveal that leafhoppers retain the ancestral condition of developing the pronotum from the mesonotum tissue, while treehoppers have co-opted wing patterning genes to develop helmets from the pronotum. 
+The background information comes from work by Fisher <i>et al.</i> 2020. In this <a href="https://www-nature-com.ezproxy.lib.uconn.edu/articles/s41559-019-1054-4">Paper</a>, the authors reveal that leafhoppers (<i>Homalodisca vitripennis</i>) retain the ancestral condition of developing the pronotum from the mesonotum tissue, while treehoppers (<i>Entylia carinata</i>) have co-opted wing patterning genes to develop helmets from the pronotum. 
 
 <h1>Initial Questions </h1>
-After reading the work by Fisher <i>et al.</i> 2020, we wondered which stage of development begins to see the recruitment of wing patterning genes and in what order. To address this, we formulated two questions: 1) How are the wing patterning genes and the pronotum related? 2) How do the relationships between the pronotum and wing genes change between the 4th and 5th instar?
+After reading the work by Fisher <i>et al.</i> 2020, we wondered which stage of <i>E. carinata</i> development begins the recruitment of wing patterning genes and in what order. To address this, we formulated two questions: 1) How are the wing patterning genes and the pronotum related? 2) How do the relationships between the pronotum and wing genes change between the 4th and 5th instar?
 
 <h1>Data Information</h1>
-The data used in this project was collected by Cera Fisher and shared with us by Elizabeth Jockusch. The data contains information on treehopper and leafhopper individuals in the fourth and fifth instar, including their body region. The data were paired-end and therefore have an assocaited R1 and R2 for each sample. To begin, we filtered out the leafhopper data and only used treehopper samples. 
+The data used in this project was collected by Cera Fisher and shared with us by Elizabeth Jockusch. The data contains information on treehopper and leafhopper individuals in the fourth and fifth instar, including their body region. The data were paired-end and therefore have an assocaited R1 and R2 for each sample. To begin, we filtered out the leafhopper data and only used treehopper samples. The data is located on the server in: 
 
 <h1>Workflow and Analysis</h1>
 <h2><b>#Step 1: File Organization, FastQC and MultiQC </b></h2>
@@ -44,3 +44,4 @@ We used Trinity to assemble our transcriptome. When running, we split our files 
 ![image](https://user-images.githubusercontent.com/44265751/116934557-1e80d000-ac33-11eb-9855-64ce23920ca4.png)
 
 <h1>Discussion</h1>
+We observed expression of W2 and W3 in the L4 and L5 instars 
