@@ -10,7 +10,7 @@ The background information comes from work by Fisher <i>et al.</i> 2020. In this
 After reading the work by Fisher <i>et al.</i> 2020, we wondered which stage of <i>E. carinata</i> development begins the recruitment of wing patterning genes and in what order. To address this, we formulated two questions: 1) How are the wing patterning genes and the pronotum related? 2) How do the relationships between the pronotum and wing genes change between the 4th and 5th instar?
 
 <h1>Data Information</h1>
-The data used in this project was collected by Cera Fisher and shared with us by Elizabeth Jockusch. The data contains information on treehopper and leafhopper individuals in the fourth and fifth instar, including their body region. The data were paired-end and therefore have an assocaited R1 and R2 for each sample. To begin, we filtered out the leafhopper data and only used treehopper samples. The data is located on the server in: !LOCATION HERE!
+The data used in this project was collected by Cera Fisher and shared with us by Elizabeth Jockusch. The data contains information on treehopper and leafhopper individuals in the fourth and fifth instar, including their body region. The data were paired-end and therefore have an assocaited R1 and R2 for each sample. To begin, we filtered out the leafhopper data and only used treehopper samples. The data is located on the server in home/FCAM/ssubramanian/files/ecar and home/FCAM/apastore/files/ecar and was copied to these locations from the ejockusch lab folder. 
 
 <h1>Workflow and Analysis</h1>
 We used the <a href="https://github.com/CBC-UCONN/RNAseq_nonmodel">Nonmodel RNAseq Tutorial</a> to analyze our data. The scripts used for each step are located in the Master Branch. The steps are broken down below:
@@ -30,7 +30,7 @@ From this point onward, we decided to only use the files associated with Wing2, 
 <b><h2>#Step 3:<i> de novo</i> Assembly with Trinity </b></h2>
 We used Trinity to assemble our transcriptome. When running, we split our files in half and ran separately. 
 
-<b><h2>#Step 4: Concatenate Asseblies for Refernce Transcriptome </b></h2>
+<b><h2>#Step 4: Concatenate Asseblies for Reference Transcriptome </b></h2>
 
 <b><h2>#Step 5: Identify Coding Regions using <i>Transdecoder</i> and <i>hmer</i></b></h2>
 
@@ -45,4 +45,4 @@ We used Trinity to assemble our transcriptome. When running, we split our files 
 ![image](https://user-images.githubusercontent.com/44265751/116934557-1e80d000-ac33-11eb-9855-64ce23920ca4.png)
 
 <h1>Discussion</h1>
-We observed expression of W2 and W3 in the L4 and L5 instars 
+We observed overlap in expression of the wing 2, wing 3, and pronotum regions in the L4 and L5 instars. 
