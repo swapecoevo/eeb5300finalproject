@@ -25,30 +25,43 @@ We used the <a href="https://github.com/CBC-UCONN/RNAseq_nonmodel">Nonmodel RNAs
 <img width="894" alt="image" src="https://user-images.githubusercontent.com/44265751/117325399-adbdfb80-ae5e-11eb-9c91-f575293f6f18.png">
 
 <h2><b>#Step 1: File Organization, FastQC and MultiQC </b></h2>
-Files belong to Elizabeth Jockusch and Cera Fisher. To begin, we decided to focus on Pronotum, Wing2, Wing3 and Abdomen files for both the fourth and fifth instar. The Wing2 and Wing3 are understood to be involved in Pronotum development, meanwhile the Abdomen would serve as our outgroup for reference. Next, we ran FastQC and MultiQC on all of the files, which produced a large output. Overall, the quality was good and we had low adapter content. Two files, N10 and N11, were poor in quality but ultimately kept in our analysis.
+Files belong to Elizabeth Jockusch and Cera Fisher. To begin, we decided to focus on Pronotum, Wing2, Wing3 and Abdomen files for both the fourth and fifth instar of the treehopper. The Wing2 and Wing3 are understood to be involved in Pronotum development, meanwhile the Abdomen would serve as our outgroup for reference. We ran FastQC and MultiQC on all of the files associated with the two instars of the treehopper and all eight body regions to evaluate the quality of all the libraries. Overall, the quality was good. There was high sequence duplication as is to be expected in RNASeq data, but we had good sequence quality and length distributions. 
 
 ![image](https://user-images.githubusercontent.com/44265751/116929615-aca58800-ac2c-11eb-90c1-f5a4cb7080da.png)
 ![image](https://user-images.githubusercontent.com/44265751/116929627-b16a3c00-ac2c-11eb-9e9d-65bf41ffc4a8.png)
 
+Importantly, the quality of one library, N11, was extremely low and had almost no unique reads, and seemed to be made up entirely of adapters. This led us to remove it from further analyses, reducing one replicate of a wing2 region of instar 5. 
+
+<img width="786" alt="image" src="https://user-images.githubusercontent.com/44265751/117332488-e8776200-ae65-11eb-9c69-faa58d8f71e6.png">
+
 
 <h2><b>#Step 2: Trimming Files with Trimmomatic </b></h2>
-From this point onward, we decided to only use the files associated with Wing2, Wing3, Pronotum, and Abdomen instead of using all the files available. Once quality control had finished, we ran Trimmomatic on the FastQC files for the aformentioned body regions. Trimmomatic would serve to remove the adapter sequences and other low-quality areas. 
+From this point onward, we decided to only use the files associated with Wing2, Wing3, Pronotum, and Abdomen instead of using all the files available. We ran Trimmomatic on the FastQC files for the aformentioned body regions. Trimmomatic would serve to remove the TruSeq paired end adapter sequences and dropped reads if they were lower than 45 base pairs. 
+
+Our quality in terms of adapter content was definitely improved.
+<img width="379" alt="image" src="https://user-images.githubusercontent.com/44265751/117332829-499f3580-ae66-11eb-938b-c477a963881d.png">
 
 ![image](https://user-images.githubusercontent.com/44265751/116928382-fbeab900-ac2a-11eb-8dd7-58ae36c96b23.png)
 ![image](https://user-images.githubusercontent.com/44265751/116928419-0b6a0200-ac2b-11eb-8d1a-e961253c2946.png)
 
 <b><h2>#Step 3:<i> de novo</i> Assembly with Trinity </b></h2>
-We used Trinity to assemble our transcriptome. When running, we split our files in half and ran separately. 
+We used Trinity to assemble our trimmed libraries. When running, we split our files in half and ran separately. Based on our sequence length distribution, we set our minimum contig length to 90. 
 
 <b><h2>#Step 4: Concatenate Asseblies for Reference Transcriptome </b></h2>
 
 <b><h2>#Step 5: Identify Coding Regions using <i>Transdecoder</i> and <i>hmer</i></b></h2>
 
-<b><h2>#Step 6: Assembly of <i>de novo</i> Reference Transcriptome using RNAQuast</b></h2>
+<b><h2>#Step 6: Use vsearch to cluster similar transcripts and assemble <i>de novo</i> Reference Transcriptome</b></h2>
+After assembling our de novo transcriptome, we used RNAQuast to evaluate the quality of our reference. 
+<img width="480" alt="image" src="https://user-images.githubusercontent.com/44265751/117333412-e8c42d00-ae66-11eb-9d98-992e5861bc5a.png">
+<img width="470" alt="image" src="https://user-images.githubusercontent.com/44265751/117333540-05f8fb80-ae67-11eb-8fc8-da83fcd91d3f.png">
+
+We found that the reference we assembled was of good quality, with our average length of our transcripts being 858.7 and our N50 being a high value at 969. 
 
 <b><h2>#Step 7: Annotate Reference Transcriptome using <i>EnTAP</i></b></h2>
 
-<b><h2>#Step 8: Index Reference using <i>Kalisto</i>, Generate Counts for each Library </b></h2>
+
+<b><h2>#Step 8: Index Reference using <i>Kallisto</i>, Generate Counts for each Library </b></h2>
 
 <b><h2>#Step 9: <i>NOIseq</i> Analysis and Differential Experession in R</b></h2>
 
