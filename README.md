@@ -116,6 +116,7 @@ We observed overlap in expression of the wing 2, wing 3, and pronotum regions in
 
 <h1>References</h1>
 Adachi, H., Matsuda, K., Nishida, K., Hanson, P., Kondo, S., & Gotoh, H. (2020). Structure and development of the complex helmet of treehoppers (Insecta: Hemiptera: Membracidae). Zoological Letters, 6(1), 3. 
+
 Fisher, C. R., Wegrzyn, J. L., & Jockusch, E. L. (2020). Co-option of wing-patterning genes underlies the evolution of the treehopper helmet. Nature Ecology & Evolution, 4(2), 250–260. 
 
 
