@@ -3,7 +3,7 @@
 <h1>Overview and Motivation:</h1>
 Treehoppers are insects that have evolved intricate, three-dimensional helmets that are not seen in any other related insects. These helmets are produced from what is normally a flat, single layer of epithelium in the body wall called the pronotum. Fisher et al. (2020) found that these helmets are produced from the expression of wing genes in the pronotum in the fifth instar of the treehopper <i>Entylia carinata<i>, an expression pattern that was not seen in the fifth instar of the related leafhopper <i>Homalodisca vitripennis<i>. 
 
-https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41559-019-1054-4/MediaObjects/41559_2019_1054_Fig4_HTML.png?as=webp![image](https://user-images.githubusercontent.com/44265751/117326216-73089300-ae5f-11eb-941e-df9a2bbe4cad.png)
+<img width="894" alt="image" src="https://user-images.githubusercontent.com/44265751/117326216-73089300-ae5f-11eb-941e-df9a2bbe4cad.png">
 
 This implied that at some point during development, treehoppers begin to express genes in the pronotum that are normally not expressed in the pronotum but only in the wing, and this is likely the mechanism that creates these three dimensional helmets from what is usually two dimensional flat body wall tissue. This mechanism is likely related to the intricate folding that occurs in wings, and co-option of this folding mechanism could cause these normally two dimensional regions to become three dimensional. However it is still an open question as to when this co-option occurs in development. Adachi et al. (2020) observed that the oragami-like folding process that creates this helmet seems to occur from the fourth to fifth instar.
 
