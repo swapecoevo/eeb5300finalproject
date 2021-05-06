@@ -1,10 +1,16 @@
 #eeb5300finalproject
 
 <h1>Overview and Motivation:</h1>
-Treehoppers are insects that have evolved intricate, three-dimensional helmets. During development, a portion of the body wall known as the pronotum begins an oragami-like folding process to create a helmet Fisher and colleagues (2020) found that these helmets are produced from co-opted wing genes, but the specifics of the chronological development are unknown. For our project, we decided to use treehopper RNAseq data from each body part at two different instars to investigate when wing genes are recruited for pronotum development. 
+Treehoppers are insects that have evolved intricate, three-dimensional helmets that are not seen in any other related insects. These helmets are produced from what is normally a flat, single layer of epithelium in the body wall called the pronotum. Fisher et al. (2020) found that these helmets are produced from the expression of wing genes in the pronotum in the fifth instar of the treehopper _Entylia carinata_, an expression pattern that was not seen in the fifth instar of the related leafhopper _Homalodisca vitripennis_. 
+https://media.springernature.com/full/springer-static/image/art%3A10.1038%2Fs41559-019-1054-4/MediaObjects/41559_2019_1054_Fig4_HTML.png?as=webp![image](https://user-images.githubusercontent.com/44265751/117326216-73089300-ae5f-11eb-941e-df9a2bbe4cad.png)
+
+This implied that at some point during development, treehoppers begin to express genes in the pronotum that are normally not expressed in the pronotum but only in the wing, and this is likely the mechanism that creates these three dimensional helmets from what is usually two dimensional flat body wall tissue. This mechanism is likely related to the intricate folding that occurs in wings, and co-option of this folding mechanism could cause these normally two dimensional regions to become three dimensional. However it is still an open question as to when this co-option occurs in development. Adachi et al. (2020) observed that the oragami-like folding process that creates this helmet seems to occur from the fourth to fifth instar.
+https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs40851-020-00155-7/MediaObjects/40851_2020_155_Fig5_HTML.png?as=webp![image](https://user-images.githubusercontent.com/44265751/117328115-540b0080-ae61-11eb-8ceb-87c5658b6c22.png)
+
+This result leads us to believe that wing genes begin to be expressed in the pronotum between the fourth and fifth instar, implying that the fourth instar of treehoppers should have different expression patterns than the fifth instar in these body regions. For our project, we decided to use treehopper RNAseq data from four body regions at the fourth and fifth instars to investigate when wing genes are recruited for pronotum development. 
 
 <h1>Related Work</h1>
-The background information comes from work by Fisher <i>et al.</i> 2020. In this <a href="https://www-nature-com.ezproxy.lib.uconn.edu/articles/s41559-019-1054-4">Paper</a>, the authors reveal that leafhoppers (<i>Homalodisca vitripennis</i>) retain the ancestral condition of developing the pronotum from the mesonotum tissue, while treehoppers (<i>Entylia carinata</i>) have co-opted wing patterning genes to develop helmets from the pronotum. Although the data we used comes from this lab, the data was not used in this study and was collected separately. Therefore, the paper serves as background information to guide us. The RNAseq data we use here were originally collected to resolve an index swapping issue.
+The background information comes from work by Fisher <i>et al.</i> 2020. In this <a href="https://www-nature-com.ezproxy.lib.uconn.edu/articles/s41559-019-1054-4">Paper</a>, the authors reveal that leafhoppers (<i>Homalodisca vitripennis</i>) retain the ancestral condition of developing the pronotum from the mesonotum tissue, while treehoppers (<i>Entylia carinata</i>) have co-opted wing patterning genes to develop helmets from the pronotum. Although the data we used comes from this lab, the data was not used in this study and was collected separately. Therefore, the paper serves as background information to guide us. The RNAseq data we use in this project were collected in an effort to parse the expression between fourth and fifth instar resolve an index swapping issue with the data in Fisher et al. (2020). 
 
 <h1>Initial Questions </h1>
 After reading the work by Fisher <i>et al.</i> 2020, we wondered which stage of <i>E. carinata</i> development begins the recruitment of wing patterning genes and in what order. To address this, we formulated two questions: 1) How are the wing patterning genes and the pronotum related? 2) How do the relationships between the pronotum and wing genes change between the 4th and 5th instar?
@@ -13,7 +19,9 @@ After reading the work by Fisher <i>et al.</i> 2020, we wondered which stage of 
 The data used in this project was collected by Cera Fisher and shared with us by Elizabeth Jockusch. The data contains information on treehopper and leafhopper individuals in the fourth and fifth instar, including their body region. The data were paired-end and therefore have an assocaited R1 and R2 for each sample. To begin, we filtered out the leafhopper data and only used treehopper samples. The data is located on the server in home/FCAM/ssubramanian/files/ecar and home/FCAM/apastore/files/ecar and was copied to these locations from the ejockusch lab folder. 
 
 <h1>Workflow and Analysis</h1>
-We used the <a href="https://github.com/CBC-UCONN/RNAseq_nonmodel">Nonmodel RNAseq Tutorial</a> to analyze our data. The scripts used for each step are located in the Master Branch. The steps are broken down below:
+We used the <a href="https://github.com/CBC-UCONN/RNAseq_nonmodel">Nonmodel RNAseq Tutorial</a> to analyze our data. The scripts used for each step are located in the folders above, and our workflow described below: 
+<img width="894" alt="image" src="https://user-images.githubusercontent.com/44265751/117325399-adbdfb80-ae5e-11eb-9c91-f575293f6f18.png">
+
 <h2><b>#Step 1: File Organization, FastQC and MultiQC </b></h2>
 Files belong to Elizabeth Jockusch and Cera Fisher. To begin, we decided to focus on Pronotum, Wing2, Wing3 and Abdomen files for both the fourth and fifth instar. The Wing2 and Wing3 are understood to be involved in Pronotum development, meanwhile the Abdomen would serve as our outgroup for reference. Next, we ran FastQC and MultiQC on all of the files, which produced a large output. Overall, the quality was good and we had low adapter content. Two files, N10 and N11, were poor in quality but ultimately kept in our analysis.
 
@@ -46,3 +54,9 @@ We used Trinity to assemble our transcriptome. When running, we split our files 
 
 <h1>Discussion</h1>
 We observed overlap in expression of the wing 2, wing 3, and pronotum regions in the L4 and L5 instars. As seen on our PCA plot, the abdomen was indeed most distant from all other body regions. 
+
+<h1>References</h1>
+Adachi, H., Matsuda, K., Nishida, K., Hanson, P., Kondo, S., & Gotoh, H. (2020). Structure and development of the complex helmet of treehoppers (Insecta: Hemiptera: Membracidae). Zoological Letters, 6(1), 3. 
+Fisher, C. R., Wegrzyn, J. L., & Jockusch, E. L. (2020). Co-option of wing-patterning genes underlies the evolution of the treehopper helmet. Nature Ecology & Evolution, 4(2), 250–260. 
+
+
