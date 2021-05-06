@@ -1,4 +1,7 @@
-# eeb5300finalproject
+# Swapna Subramanian and Amanda Pastore
+# EEB 5300 Final Project Report
+# Analyzing Differential Expression between Treehopper Instars and Body Regions
+
 
 <h1>Overview and Motivation:</h1>
 Treehoppers are insects that have evolved intricate, three-dimensional helmets that are not seen in any other related insects. These helmets are produced from what is normally a flat, single layer of epithelium in the body wall called the pronotum. Fisher et al. (2020) found that these helmets are produced from the expression of wing genes in the pronotum in the fifth instar of the treehopper <i>Entylia carinata</i>, an expression pattern that was not seen in the fifth instar of the related leafhopper <i>Homalodisca vitripennis</i>. 
