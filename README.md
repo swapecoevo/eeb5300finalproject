@@ -7,7 +7,7 @@ Treehoppers are insects that have evolved intricate, three-dimensional helmets t
 
 This implied that at some point during development, treehoppers begin to express genes in the pronotum that are normally not expressed in the pronotum but only in the wing, and this is likely the mechanism that creates these three dimensional helmets from what is usually two dimensional flat body wall tissue. This mechanism is likely related to the intricate folding that occurs in wings, and co-option of this folding mechanism could cause these normally two dimensional regions to become three dimensional. However it is still an open question as to when this co-option occurs in development. Adachi et al. (2020) observed that the oragami-like folding process that creates this helmet seems to occur from the fourth to fifth instar.
 
-<img width="894" alt="image" src="https://user-images.githubusercontent.com/44265751/117328115-540b0080-ae61-11eb-8ceb-87c5658b6c22.png">
+<img width="600" alt="image" src="https://user-images.githubusercontent.com/44265751/117328115-540b0080-ae61-11eb-8ceb-87c5658b6c22.png">
 
 This result leads us to believe that wing genes begin to be expressed in the pronotum between the fourth and fifth instar, implying that the fourth instar of treehoppers should have different expression patterns than the fifth instar in these body regions. For our project, we decided to use treehopper RNAseq data from four body regions at the fourth and fifth instars to investigate when wing genes are recruited for pronotum development. 
 
@@ -78,8 +78,7 @@ We then evaluated whether there was a length bias in our reads, and found that a
 Finally, we used NOISeq to create PCA plots that visualize the distribution of our expression data using either instar or body region as the visualizing factor at a time, but we went on to make further visualizations using the R pipeline described in the RNASeq model organism tutorial that gave us more informative PCA plots.
 
 We also were able to see how many genes were upregulated or downregulated in these instars using NOISeq. 
-![image](https://user-images.githubusercontent.com/44265751/117336222-f62ee680-ae69-11eb-8937-c7c2027feffb.jpeg)
-We found that 45 genes were differentially expressed, which was much lower than we were expecting and may have been thrown off by our inclusion of N10. 
+We found that 45 genes were differentially expressed, with 11 upregulated in instar 4 and 34 upregulated in instar 5 which was much lower than we were expecting and may have been thrown off by our inclusion of N10. 
 
 The RNASeq model organism R pipeline utilizes counts that are from the package HTSeq, but we had used kallisto to generate our counts and had to convert the counts into integer format so that it was readable by the R package DESeq. After this conversion, we were able to follow this pipeline to get some more visualizations that would enable us to compare expression between the instars and body region and their interaction. 
 
