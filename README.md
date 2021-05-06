@@ -59,13 +59,50 @@ After assembling our de novo transcriptome, we used RNAQuast to evaluate the qua
 We found that the reference we assembled was of good quality, with our average length of our transcripts being 858.7 and our N50 being a high value at 969. 
 
 <b><h2>#Step 7: Annotate Reference Transcriptome using <i>EnTAP</i></b></h2>
-
+To annotate our reference transcriptome to eventually do gene ontology, we searched three databases using EnTAP and favoring hits to the genus Entylia. The three databases we searched were UniProt, RefSeq, and NR Protein. 
 
 <b><h2>#Step 8: Index Reference using <i>Kallisto</i>, Generate Counts for each Library </b></h2>
+We used kallisto to index the reference transcriptome and then generate counts for each library. To generate counts in readable files for R we then ran two scripts located in the 08_Counts folder. 
 
-<b><h2>#Step 9: <i>NOIseq</i> Analysis and Differential Experession in R</b></h2>
+<b><h2>#Step 9: Visualization and Analysis of Differential Experession in R</b></h2>
+We began our analysis in R by using NOISeq as was described in the RNASeq non-model organism tutorial. We first generated a count distribution plot to see whether the counts of each library were distributed relatively evenly. 
 
 ![image](https://user-images.githubusercontent.com/44265751/116934557-1e80d000-ac33-11eb-9855-64ce23920ca4.png)
+
+This revealed that one of our libraries, N10, had lower counts than all our other samples, and as we looked back at our fastqc file associated with this library we saw that it also had a low amount of unique reads that we had not noticed before, and that we will further examine in our future directions. 
+
+We then evaluated whether there was a length bias in our reads, and found that as reads were longer they seemed to be expressed more. 
+<img width="418" alt="image" src="https://user-images.githubusercontent.com/44265751/117335251-f24e9480-ae68-11eb-9f54-bce5ddc9936d.png">
+
+Finally, we used NOISeq to create PCA plots that visualize the distribution of our expression data using either instar or body region as the visualizing factor at a time, but we went on to make further visualizations using the R pipeline described in the RNASeq model organism tutorial that gave us more informative PCA plots.
+
+We also were able to see how many genes were upregulated or downregulated in these instars using NOISeq. 
+![image](https://user-images.githubusercontent.com/44265751/117336222-f62ee680-ae69-11eb-8937-c7c2027feffb.jpeg)
+We found that 45 genes were differentially expressed, which was much lower than we were expecting and may have been thrown off by our inclusion of N10. 
+
+The RNASeq model organism R pipeline utilizes counts that are from the package HTSeq, but we had used kallisto to generate our counts and had to convert the counts into integer format so that it was readable by the R package DESeq. After this conversion, we were able to follow this pipeline to get some more visualizations that would enable us to compare expression between the instars and body region and their interaction. 
+
+The first plot generated was a histogram of the log of the sum counts for each gene across all the samples. This showed us that the counts of this RNASeq data was widely distributed even when log transformed.
+<img width="873" alt="Screen Shot 2021-05-06 at 12 57 10 PM" src="https://user-images.githubusercontent.com/44265751/117336791-94bb4780-ae6a-11eb-8a10-64ac659bf7a8.png">
+
+The plots of our shrunken log2 fold changes showed that there were some genes that were upreglated or downregulated, and that there was differential expression at a few of the red points that had significant change. 
+<img width="854" alt="Screen Shot 2021-05-06 at 12 59 02 PM" src="https://user-images.githubusercontent.com/44265751/117337004-d9df7980-ae6a-11eb-8f22-f90c3aa8f169.png">
+<img width="857" alt="Screen Shot 2021-05-06 at 12 59 26 PM" src="https://user-images.githubusercontent.com/44265751/117337056-e82d9580-ae6a-11eb-82da-dcdfa2c71307.png">
+<img width="865" alt="Screen Shot 2021-05-06 at 1 02 29 PM" src="https://user-images.githubusercontent.com/44265751/117337405-53776780-ae6b-11eb-8448-d57074f43714.png">
+
+We then created PCA plots using variance stabilized transformed counts and first did it by just one factor, instar or body region, at a time. This allowed us to see if there are differences between the instars overall and the body regions overall. 
+The instar plot showed us that there was quite a bit of overlap between the instars and that instar variation is not one of the main explanations of the variance in the data. 
+<img width="677" alt="Screen Shot 2021-05-06 at 1 05 26 PM" src="https://user-images.githubusercontent.com/44265751/117337736-bbc64900-ae6b-11eb-9caa-575da629ea99.png">
+
+The PCA for body regions showed that our outgroup of the abdomen is grouped together separately from those body regions that we expected to show more similar expression. And as the Fisher et al. (2020) paper showed us, there was a lot of overlap between the wing regions and the pronotum.
+<img width="682" alt="Screen Shot 2021-05-06 at 1 06 53 PM" src="https://user-images.githubusercontent.com/44265751/117337904-f0d29b80-ae6b-11eb-9eca-0c0d9d60774d.png">
+
+We were then able to create a PCA visualizing both instar and body region together, with the reds and greens indicating instar 4 body regions and the blues and purples instar 5 body regions. The abdomen body regions are grouped together again, and it seems that there is quite a bit of overlap in wing and pronotum expression between the two instars, which was not what we were expecting, and will be further expounded upon in the discussion. 
+<img width="731" alt="Screen Shot 2021-05-06 at 1 11 06 PM" src="https://user-images.githubusercontent.com/44265751/117338418-8706c180-ae6c-11eb-8507-b6edefc8f4e7.png">
+
+Finally, we were able to create a heatmap of the top 50 differentially expressed genes between instar and body region, which showed some specific genes that were differentially expressed between instars, but did not clearly show differences between instars and body regions interacting. 
+![image](https://user-images.githubusercontent.com/44265751/117338762-f1b7fd00-ae6c-11eb-9c85-4574bd240165.png)
+
 
 <h1>Discussion</h1>
 We observed overlap in expression of the wing 2, wing 3, and pronotum regions in the L4 and L5 instars. As seen on our PCA plot, the abdomen was indeed most distant from all other body regions. 
