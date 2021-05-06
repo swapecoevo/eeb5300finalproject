@@ -39,6 +39,7 @@ Importantly, the quality of one library, N11, was extremely low and had almost n
 From this point onward, we decided to only use the files associated with Wing2, Wing3, Pronotum, and Abdomen instead of using all the files available. We ran Trimmomatic on the FastQC files for the aformentioned body regions. Trimmomatic would serve to remove the TruSeq paired end adapter sequences and dropped reads if they were lower than 45 base pairs. 
 
 Our quality in terms of adapter content was definitely improved.
+
 <img width="379" alt="image" src="https://user-images.githubusercontent.com/44265751/117332829-499f3580-ae66-11eb-938b-c477a963881d.png">
 
 ![image](https://user-images.githubusercontent.com/44265751/116928382-fbeab900-ac2a-11eb-8dd7-58ae36c96b23.png)
