@@ -109,9 +109,22 @@ Finally, we were able to create a heatmap of the top 50 differentially expressed
 
 
 <h1>Discussion</h1>
-We observed overlap in expression of the wing 2, wing 3, and pronotum regions in the L4 and L5 instars. As seen on our PCA plot, the abdomen was indeed most distant from all other body regions. 
+We observed overlap in expression of the wing2, wing3, and pronotum regions in the fourth and fifth instars, which was expected, but we expected to see some more differentiation between the instars. If looking at the PCA plot that just is colored by the instar factor, there is quite a bit of overlap between the fourth and fifth instars, and it seems that instar differences do not explain most of the variance in our data. When looking at the PCA plot that is just colored by body region, we see that the abdomen, our outgroup, was indeed the most distantly related to all other body regions, and that there is overlap between the wing body regions and the pronotum. When looking at them separately, it seems as though there is little differentiation between wing and pronotum expression between the instars.
+
+![image](https://user-images.githubusercontent.com/44265751/117356513-cf7caa00-ae81-11eb-9db2-fad48e415821.png)
+
+However, when we look at the PCA plot that is colored by both instar and body region above, we see slight evidence of some interaction between the factors. Clearly the abdomen is clustered away from the rest of the body regions in both instars, so we can clearly see that our outgroup was indeed an outgroup. And if you look at the overlap of fourth and fifth wing and pronotum regions, there does seem to be some grouping. The fourth and fifth samples seem to be slightly differentiated, with all of the fourth instar wing and pronotum regions clustered together. Two of the fifth instar replicates are clustered to the bottom right of the fourth instar, but one fifth instar individual is clustered away from the rest. Our low sample size may have allowed specific individuals to have a large effect on the data, and this fifth instar sample could be an outlier. We had initially hypothesized that wing genes would show less overlap with the pronotum genes in the fourth instar and overlap more in the fifth instar, but this is clearly not the case even with the slight grouping that we see. But there might be slightly different expression in these regions in the fourth and fifth instar, and further exploration is necessary to see what exactly these differences are and if they are relevant. 
 
 ![image](https://user-images.githubusercontent.com/44265751/117340712-3349a780-ae6f-11eb-88a8-df77c00ad15c.png)
+
+We observed the following patterns from the numbered regions highlighted in our heatmap shown above:
+In the first highlighted region there was a consistent increase in expression across all body regions in the fourth instar, but downregulation in the same genes for the fifth instar. We can’t be certain as to what the function of these genes are without delving more into gene ontology, but these genes seem to be associated with a process that slows in the fifth instar.
+This gene was expressed widely in both the fourth and fifth instar across all body regions. The expression of this gene does appear to decrease slightly in expression in the fifth instar, but once again across all body regions. 
+This gene seems to be clearly upregulated in the abdomen, and is expressed more in the fifth instar. While the abdomen was only our outgroup, this is still an interesting pattern to find (and we do wish we had clearer patterns like this to interpret with our wing and pronotum regions). 
+There was high variation in the libraries of this row, however it appears that the abdomen and wing 2 regions experienced upregulation for this gene in both instars, with more upregulation in instar 5. However this is a very irregular pattern and we are not sure if any conclusions should be drawn from this. 
+
+Overall, these patterns do not give us much insight toward differential expression between the body regions that we were interested in, but does seem to have some wider patterns of differential expression between the instars.
+
 
 
 <h1>References</h1>
