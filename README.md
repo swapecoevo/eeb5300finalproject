@@ -45,4 +45,4 @@ We used Trinity to assemble our transcriptome. When running, we split our files 
 ![image](https://user-images.githubusercontent.com/44265751/116934557-1e80d000-ac33-11eb-9855-64ce23920ca4.png)
 
 <h1>Discussion</h1>
-We observed overlap in expression of the wing 2, wing 3, and pronotum regions in the L4 and L5 instars. 
+We observed overlap in expression of the wing 2, wing 3, and pronotum regions in the L4 and L5 instars. As seen on our PCA plot, the abdomen was indeed most distant from all other body regions. 
