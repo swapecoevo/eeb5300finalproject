@@ -92,15 +92,19 @@ The plots of our shrunken log2 fold changes showed that there were some genes th
 
 We then created PCA plots using variance stabilized transformed counts and first did it by just one factor, instar or body region, at a time. This allowed us to see if there are differences between the instars overall and the body regions overall. 
 The instar plot showed us that there was quite a bit of overlap between the instars and that instar variation is not one of the main explanations of the variance in the data. 
+
 <img width="677" alt="Screen Shot 2021-05-06 at 1 05 26 PM" src="https://user-images.githubusercontent.com/44265751/117337736-bbc64900-ae6b-11eb-9caa-575da629ea99.png">
 
 The PCA for body regions showed that our outgroup of the abdomen is grouped together separately from those body regions that we expected to show more similar expression. And as the Fisher et al. (2020) paper showed us, there was a lot of overlap between the wing regions and the pronotum.
+
 <img width="682" alt="Screen Shot 2021-05-06 at 1 06 53 PM" src="https://user-images.githubusercontent.com/44265751/117337904-f0d29b80-ae6b-11eb-9eca-0c0d9d60774d.png">
 
 We were then able to create a PCA visualizing both instar and body region together, with the reds and greens indicating instar 4 body regions and the blues and purples instar 5 body regions. The abdomen body regions are grouped together again, and it seems that there is quite a bit of overlap in wing and pronotum expression between the two instars, which was not what we were expecting, and will be further expounded upon in the discussion. 
+
 <img width="731" alt="Screen Shot 2021-05-06 at 1 11 06 PM" src="https://user-images.githubusercontent.com/44265751/117338418-8706c180-ae6c-11eb-8507-b6edefc8f4e7.png">
 
 Finally, we were able to create a heatmap of the top 50 differentially expressed genes between instar and body region, which showed some specific genes that were differentially expressed between instars, but did not clearly show differences between instars and body regions interacting. 
+
 ![image](https://user-images.githubusercontent.com/44265751/117338762-f1b7fd00-ae6c-11eb-9c85-4574bd240165.png)
 
 
