@@ -110,6 +110,7 @@ Finally, we were able to create a heatmap of the top 50 differentially expressed
 
 <h1>Discussion</h1>
 We observed overlap in expression of the wing 2, wing 3, and pronotum regions in the L4 and L5 instars. As seen on our PCA plot, the abdomen was indeed most distant from all other body regions. 
+
 ![image](https://user-images.githubusercontent.com/44265751/117340712-3349a780-ae6f-11eb-88a8-df77c00ad15c.png)
 
 
