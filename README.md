@@ -7,7 +7,7 @@ Treehoppers are insects that have evolved intricate, three-dimensional helmets t
 
 This implied that at some point during development, treehoppers begin to express genes in the pronotum that are normally not expressed in the pronotum but only in the wing, and this is likely the mechanism that creates these three dimensional helmets from what is usually two dimensional flat body wall tissue. This mechanism is likely related to the intricate folding that occurs in wings, and co-option of this folding mechanism could cause these normally two dimensional regions to become three dimensional. However it is still an open question as to when this co-option occurs in development. Adachi et al. (2020) observed that the oragami-like folding process that creates this helmet seems to occur from the fourth to fifth instar.
 
-https://media.springernature.com/full/springer-static/image/art%3A10.1186%2Fs40851-020-00155-7/MediaObjects/40851_2020_155_Fig5_HTML.png?as=webp![image](https://user-images.githubusercontent.com/44265751/117328115-540b0080-ae61-11eb-8ceb-87c5658b6c22.png)
+<img width="894" alt="image" src="https://user-images.githubusercontent.com/44265751/117328115-540b0080-ae61-11eb-8ceb-87c5658b6c22.png">
 
 This result leads us to believe that wing genes begin to be expressed in the pronotum between the fourth and fifth instar, implying that the fourth instar of treehoppers should have different expression patterns than the fifth instar in these body regions. For our project, we decided to use treehopper RNAseq data from four body regions at the fourth and fifth instars to investigate when wing genes are recruited for pronotum development. 
 
