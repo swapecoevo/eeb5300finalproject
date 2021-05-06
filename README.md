@@ -1,6 +1,6 @@
-# Swapna Subramanian and Amanda Pastore
+# Analyzing Differential Expression between Treehopper Instars and Body Regions
+## Swapna Subramanian and Amanda Pastore
 ## EEB 5300 Final Project Report
-## Analyzing Differential Expression between Treehopper Instars and Body Regions
 
 
 <h1>Overview and Motivation:</h1>
